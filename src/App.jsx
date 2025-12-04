@@ -13,11 +13,15 @@ export default function App() {
   const [dark, setDark] = useState(true);
 
   return (
-    <div className={dark ? 'dark' : ''}>
-      <main className="min-h-screen bg-gray-950 transition-colors duration-500 font-sans text-gray-100 overflow-x-hidden">
+    <div className={dark ? 'dark' : 'light'}>
+      <main className={`min-h-screen transition-colors duration-500 font-sans overflow-x-hidden ${
+        dark 
+          ? 'bg-gray-950 text-gray-100' 
+          : 'bg-white text-gray-900'
+      }`}>
         {/* Animated background grid */}
         <div className="fixed inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f12_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f12_1px,transparent_1px)] bg-[size:14px_24px]"></div>
+          <div className={`absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f12_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f12_1px,transparent_1px)] bg-[size:14px_24px] ${dark ? '' : 'opacity-20'}`}></div>
           <motion.div
             animate={{
               scale: [1, 1.2, 1],

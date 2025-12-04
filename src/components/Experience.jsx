@@ -22,37 +22,58 @@ export default function Experience() {
         className="relative p-8 bg-gradient-to-br from-gray-800/50 to-gray-900/50 border border-gray-800 rounded-3xl hover:border-purple-500/50 transition-all"
       >
         <div className="flex items-start gap-6">
-          <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-purple-500/10 flex items-center justify-center">
+          <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-purple-500/10 flex items-center justify-center flex-shrink-0">
             <FiBriefcase className="text-2xl text-purple-400" />
           </div>
           
           <div className="flex-1">
             <div className="flex items-start justify-between flex-wrap gap-4 mb-2">
               <div>
-                <h4 className="text-2xl font-bold mb-1">Intern Developer</h4>
+                <h4 className="text-2xl font-bold mb-1">Intern Mobile App Developer</h4>
                 <p className="text-purple-400 font-medium mb-2">GDCreations</p>
               </div>
               <div className="flex items-center gap-4 text-sm text-gray-400">
                 <div className="flex items-center gap-2">
                   <FiCalendar />
-                  <span>2025 - Present</span>
+                  <span>Jan 2024 - Present</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <FiMapPin />
-                  <span>Remote</span>
+                  <span>Hybrid</span>
                 </div>
               </div>
             </div>
             
-            <p className="text-gray-400 leading-relaxed">
-              Developing mobile and web applications, collaborating with cross-functional teams to deliver high-quality software solutions. Working with modern technologies and best practices.
+            <p className="text-gray-400 leading-relaxed mb-4">
+              Worked closely with senior developers and designers to build production-ready financial mobile applications. Contributed across the full development lifecycle including UI/UX design, frontend development, database integration, API integration, testing, and deployment and played an active role in releasing the apps to the Google Play Store.
             </p>
 
-            <div className="mt-6 flex flex-wrap gap-2">
-              {['Flutter', 'Firebase', 'React', 'Node.js'].map((tech) => (
+            <div className="grid md:grid-cols-2 gap-4 mb-6">
+              <div className="p-4 bg-gray-900/50 rounded-lg border border-gray-800">
+                <h5 className="font-semibold text-sm text-purple-400 mb-2">Key Achievements</h5>
+                <ul className="text-sm text-gray-400 space-y-1">
+                  <li>• Published financial mobile app to Google Play Store</li>
+                  <li>• Built second production-ready finance app</li>
+                  <li>• Full-stack development: Flutter frontend & Laravel backend</li>
+                  <li>• Independent project ownership & decision making</li>
+                </ul>
+              </div>
+              <div className="p-4 bg-gray-900/50 rounded-lg border border-gray-800">
+                <h5 className="font-semibold text-sm text-purple-400 mb-2">Responsibilities</h5>
+                <ul className="text-sm text-gray-400 space-y-1">
+                  <li>• UI/UX design & Flutter development</li>
+                  <li>• SQLite & Firebase integration</li>
+                  <li>• REST API development with Laravel</li>
+                  <li>• App testing, optimization & deployment</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="flex flex-wrap gap-2">
+              {['Flutter', 'Dart', 'Firebase', 'SQLite', 'Laravel', 'REST API', 'Google Play Store', 'Git/GitHub'].map((tech) => (
                 <span
                   key={tech}
-                  className="px-3 py-1 bg-gray-900/50 rounded-lg text-xs text-gray-300 border border-gray-800"
+                  className="px-3 py-1 bg-purple-500/10 text-purple-300 text-xs rounded-lg border border-purple-500/30"
                 >
                   {tech}
                 </span>

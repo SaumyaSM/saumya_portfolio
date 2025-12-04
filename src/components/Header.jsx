@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FiGithub, FiLinkedin, FiSun, FiMoon, FiMail } from 'react-icons/fi';
+import { FiGithub, FiLinkedin, FiMail } from 'react-icons/fi';
 import { SOCIAL } from '../data/constants';
 
 export default function Header({ dark, setDark }) {
@@ -72,15 +72,6 @@ export default function Header({ dark, setDark }) {
               <FiMail />
               <span>Contact</span>
             </motion.a>
-
-            <motion.button
-              onClick={() => setDark(!dark)}
-              whileHover={{ scale: 1.1, rotate: 180 }}
-              whileTap={{ scale: 0.9 }}
-              className="p-2.5 rounded-lg bg-gray-800/50 hover:bg-gray-800 transition-all"
-            >
-              {dark ? <FiSun className="text-lg" /> : <FiMoon className="text-lg" />}
-            </motion.button>
           </motion.div>
         </div>
       </div>

@@ -60,7 +60,7 @@ export default function Hero() {
           </motion.a>
 
           <motion.a
-            href="/Saumya Rajapaksha CV.pdf"
+            href="/saumya_portfolio/SaumyaRajapaksha-CV.pdf"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="px-8 py-4 bg-gray-800/50 border border-gray-700 rounded-full font-semibold flex items-center gap-2 hover:bg-gray-800 hover:border-gray-600 transition-all"

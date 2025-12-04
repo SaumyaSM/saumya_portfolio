@@ -6,8 +6,8 @@ export const SOCIAL = {
 
 export const SKILLS = {
   languages: ['Dart', 'Java', 'C#', 'C', 'Python', 'JavaScript', 'PHP'],
-  frameworks: ['Flutter', 'Firebase', 'Laravel', 'Tailwind', 'Bootstrap'],
-  tools: ['Git', 'VS Code', 'Android Studio', 'Xcode', 'MySQL', 'XAMPP'],
+  frameworks: ['Flutter', 'Firebase', 'Laravel', 'React', 'Tailwind', 'Bootstrap'],
+  tools: ['Git', 'VS Code', 'Android Studio', 'Xcode', 'MySQL', 'XAMPP', 'Vite', 'Framer Motion'],
 };
 
 export const PROJECTS = [
